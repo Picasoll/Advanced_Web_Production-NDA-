@@ -20,4 +20,6 @@ values('Singapore','1800-255-0000','955','955')
 insert into E_numbers
 values('Thailand','191','1669','199')
 
+select * from E_Numbers
+
 drop table E_Numbers

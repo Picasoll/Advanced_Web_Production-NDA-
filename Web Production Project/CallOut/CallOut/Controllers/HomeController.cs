@@ -6,7 +6,10 @@ using System.Web.Mvc;
 using Facebook;
 using Newtonsoft.Json;
 using System.Web.Security;
-using Microsoft.Owin.Security.Facebook;
+using System.Data;
+using ASPSnippets.TwitterAPI;
+using CallOut.Models;
+
 
 namespace CallOut.Controllers
 {
@@ -16,6 +19,7 @@ namespace CallOut.Controllers
         {
             return View();
         }
+        
 
         public ActionResult About()
         {
@@ -31,127 +35,24 @@ namespace CallOut.Controllers
             return View();
         }
 
+        //[HttpPost]
         public ActionResult Login()
         {
+            ViewBag.Message = "Your login page.";
+
             return View();
         }
 
         public ActionResult ShareProblems()
         {
+            ViewBag.Message = "Your Share Problems page.";
             return View();
         }
 
-        private Uri RediredtUri
-
+        public ActionResult SharePage()
         {
-
-            get
-
-            {
-
-                var uriBuilder = new UriBuilder(Request.Url);
-
-                uriBuilder.Query = null;
-
-                uriBuilder.Fragment = null;
-
-                uriBuilder.Path = Url.Action("FacebookCallback");
-
-                return uriBuilder.Uri;
-
-            }
-
+            ViewBag.Message = "Your Share page.";
+            return View();
         }
-
-
-
-
-        [AllowAnonymous]
-
-        public ActionResult Facebook()
-
-        {
-
-            var fb = new FacebookClient();
-
-            var loginUrl = fb.GetLoginUrl(new
-
-            {
-
-
-
-
-                client_id = "1550132248426126",
-
-                client_secret = "93f58dc84ba672c824800314704b853a",
-
-                redirect_uri = RediredtUri.AbsoluteUri,
-
-                response_type = "code",
-
-                scope = "email"
-
-
-
-            });
-
-            return Redirect(loginUrl.AbsoluteUri);
-
-        }
-
-
-
-
-        public ActionResult FacebookCallback(string code)
-
-        {
-
-            var fb = new FacebookClient();
-
-            dynamic result = fb.Post("oauth/access_token", new
-
-            {
-
-                client_id = "1550132248426126",
-
-                client_secret = "93f58dc84ba672c824800314704b853a",
-
-                redirect_uri = RediredtUri.AbsoluteUri,
-
-                code = code
-
-
-
-
-            });
-
-            var accessToken = result.access_token;
-
-            Session["AccessToken"] = accessToken;
-
-            fb.AccessToken = accessToken;
-
-            dynamic me = fb.Get("me?fields=link,first_name,currency,last_name,email,gender,locale,timezone,verified,picture,age_range");
-
-            string email = me.email;
-
-            TempData["email"] = me.email;
-
-            TempData["first_name"] = me.first_name;
-
-            TempData["lastname"] = me.last_name;
-
-            TempData["picture"] = me.picture.data.url;
-
-            FormsAuthentication.SetAuthCookie(email, false);
-
-            return RedirectToAction("Index", "Home");
-
-        }
-
-
-
-
     }
-
 }

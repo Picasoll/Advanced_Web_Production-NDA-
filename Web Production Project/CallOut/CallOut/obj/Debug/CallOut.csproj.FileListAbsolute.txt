@@ -1,78 +1,167 @@
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\ApplicationInsights.config
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\csc.exe
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\csc.exe.config
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\csc.rsp
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\csi.exe
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\csi.rsp
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\System.AppContext.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\vbc.exe
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\vbc.exe.config
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\vbc.rsp
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\VBCSCompiler.exe
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\CallOut.dll.config
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\CallOut.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\CallOut.pdb
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Antlr3.Runtime.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Facebook.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.Agent.Intercept.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.DependencyCollector.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.PerfCounterCollector.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.ServerTelemetryChannel.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.Web.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.WindowsServer.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.ApplicationInsights.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Newtonsoft.Json.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Owin.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.Helpers.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.Mvc.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.Optimization.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.Razor.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.Razor.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\WebGrease.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Facebook.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Newtonsoft.Json.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.Helpers.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.Mvc.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.Optimization.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.Razor.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.Razor.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Antlr3.Runtime.pdb
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.ApplicationInsights.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.DependencyCollector.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.ServerTelemetryChannel.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.WindowsServer.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.Web.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.pdb
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Picasol\Desktop\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.csprojResolveAssemblyReference.cache
+C:\Users\USER\Desktop\CallOut\CallOut\bin\ApplicationInsights.config
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\csc.exe
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\vbc.exe
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\VBCSCompiler.exe
+C:\Users\USER\Desktop\CallOut\CallOut\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\USER\Desktop\CallOut\CallOut\bin\CallOut.dll.config
+C:\Users\USER\Desktop\CallOut\CallOut\bin\CallOut.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\CallOut.pdb
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Antlr3.Runtime.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\EntityFramework.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\EntityFramework.SqlServer.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.Web.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.ApplicationInsights.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Newtonsoft.Json.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Owin.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.Helpers.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.Mvc.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.Optimization.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.Razor.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.WebPages.Deployment.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.WebPages.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.WebPages.Razor.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\WebGrease.dll
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.Web.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.ApplicationInsights.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.Helpers.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.Mvc.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.Optimization.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.Razor.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.WebPages.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.WebPages.Deployment.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\System.Web.WebPages.Razor.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Antlr3.Runtime.pdb
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Newtonsoft.Json.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\EntityFramework.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\EntityFramework.SqlServer.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\USER\Desktop\CallOut\CallOut\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\USER\Desktop\CallOut\CallOut\obj\Debug\CallOut.dll
+C:\Users\USER\Desktop\CallOut\CallOut\obj\Debug\CallOut.pdb
+C:\Users\USER\Desktop\CallOut\CallOut\obj\Debug\CallOut.csprojResolveAssemblyReference.cache
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\ApplicationInsights.config
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\csc.exe
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\System.Collections.Immutable.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\System.Reflection.Metadata.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\vbc.exe
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\VBCSCompiler.exe
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\roslyn\VBCSCompiler.exe.config
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\CallOut.dll.config
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\CallOut.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\CallOut.pdb
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Antlr3.Runtime.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\ASPSnippets.TwitterAPI.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\EntityFramework.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\EntityFramework.SqlServer.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Facebook.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.DependencyCollector.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.Web.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.WindowsServer.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.ApplicationInsights.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Google.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Web.Infrastructure.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Newtonsoft.Json.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Owin.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.Helpers.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.Mvc.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.Optimization.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.Razor.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.Deployment.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.Razor.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\WebGrease.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Facebook.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.DependencyCollector.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.Web.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AI.WindowsServer.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.ApplicationInsights.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.Helpers.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.Mvc.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.Optimization.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.Razor.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.Deployment.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\System.Web.WebPages.Razor.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Antlr3.Runtime.pdb
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Newtonsoft.Json.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\EntityFramework.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\EntityFramework.SqlServer.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Google.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.csprojResolveAssemblyReference.cache
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.dll
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.pdb

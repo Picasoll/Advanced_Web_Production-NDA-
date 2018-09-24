@@ -1,0 +1,182 @@
+﻿@model IEnumerable<CallOut.E_Numbers>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome To CallOut</title>
+    <meta property="og:url" content="https://localhost:44303/Home/SharePage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CallOut" />
+    <meta property="og:description" content="Your Friend's last known location" />
+
+
+    <link rel="icon" type="image/ico" href="./Images/icon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="~/Content/materialize.min.css" media="screen,projection" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/Style.css" media="screen,projection"/> -->
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--map links -->
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map-container {
+            position: relative;
+            height: 400px;
+            width: inherit;
+        }
+
+        #map {
+            position: relative;
+            height: inherit;
+            width: inherit;
+        }
+    </style>
+
+    <script>
+
+
+
+
+    </script>
+
+</head>
+<body bgcolor="#424242">
+    <div class="navbar-fixed">
+        <nav class="blue">
+            <div class="nav-wrapper">
+                <div class="row">
+                    <div class="col s12 m12 l3">
+                        <a href="#" class="brand-logo ">Logo</a>
+                    </div>
+                    <div class="col l7 right">
+                        <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
+                          <li>
+                            <button type="button" name="button" class="waves-effect waves-light btn blue" id="alarm-sound">
+                              Emergency Alarm
+                            </button>
+                          </li>
+                        </ul> -->
+                        <div class="hide-on-med-and-down">
+                            <h5>Creating a safe place for everyone</h5>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="row green">
+        <b class="show-on-medium-and-down hide-on-large-only white-text center-align">Creating a safe place for everyone</b>
+    </div>
+    <div class="row" style="margin-bottom:0px;">
+
+        <div class="row">
+            <div class="container">
+                <div class="col s12">
+                    <blockquote class="grey lighten-5"><h5 class="red-text text-darken-2">This is the Shared Location</h5></blockquote>
+                </div>
+                <div class="col s12">
+                    <div class="col s4"></div>
+                    <div id="map-container" class="col s4">
+                        <div id='map'></div>
+                    </div>
+                    <div class="col s4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+            var lat = 2;
+            var lng = 1;
+            $(document).ready(function () {
+
+                var url = window.location.search.toString();
+                var parts = url.split("&");
+
+                var latpart = parts[0];
+                var lngpart = parts.slice(1).join('&');
+
+                lat = parseFloat(latpart.slice(5));
+                lng = parseFloat(lngpart.slice(4));
+
+
+                console.log(lat);
+                console.log(lng);
+
+                $('.sidenav').sidenav()
+                $('.modal').modal();
+
+                var obj = document.createElement("audio");
+                obj.src = "../audio/Alarm.wav";
+                obj.volume = 0.5;
+                obj.autoPlay = false;
+                obj.preLoad = true;
+                obj.controls = true;
+                obj.loop = true;
+                var play = false;
+                $('#alarm-sound').click(function () {
+                    if (play === false) {
+                        obj.play();
+                        play = true;
+                    } else {
+                        obj.pause();
+                        play = false;
+                    }
+                });
+            });
+            mapboxgl.accessToken = 'pk.eyJ1IjoicGljYXNvbCIsImEiOiJjamt3N3B1YTgwNjR3M2ttbXlzbXIxYWN0In0.1r0Eqh9D3fJxvF7DNjE0yg';
+            var map = new mapboxgl.Map({
+                container: 'map', // container id
+                style: 'mapbox://styles/mapbox/streets-v9',
+                center: [96.159532, 16.827762], // starting position
+                zoom: 15 // starting zoom
+            });
+            map.on("load", function () {
+                /* Image: An image is loaded and added to the map. */
+                map.loadImage("https://i.imgur.com/MK4NUzI.png", function (error, image) {
+                    if (error) throw error;
+                    map.addImage("custom-marker", image);
+                    /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+                    map.addLayer({
+                        id: "markers",
+                        type: "symbol",
+                        /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+                        source: {
+                            type: "geojson",
+                            data: {
+                                type: "FeatureCollection",
+                                features: [{ "type": "Feature", "geometry": { "type": "Point", "coordinates": [lng, lat] } }]
+                            }
+                        },
+                        layout: {
+                            "icon-image": "custom-marker",
+                        }
+                    });
+                });
+            });
+    </script>
+    <script type="text/javascript" src="~/Scripts/materialize.min.js"></script>
+</body>
+</html>
