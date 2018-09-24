@@ -1,0 +1,502 @@
+﻿@model IEnumerable<CallOut.E_Numbers>
+
+@{
+    ViewBag.Title = "ShareProblems";
+}
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome To CallOut</title>
+    @*<link rel="icon" type="image/ico" href="./Images/icon.png" />*@
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--map links -->
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.47.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #map-container {
+            position: relative;
+            height: 400px;
+            width: inherit;
+        }
+
+        #map {
+            position: relative;
+            height: inherit;
+            width: inherit;
+        }
+    </style>
+</head>
+<body bgcolor="#424242">
+
+    <div class="row green">
+        <b class="show-on-medium-and-down hide-on-large-only white-text center-align">Creating a safe place for everyone</b>
+    </div>
+
+    <div class="row">
+        <div class="container">
+            <div class="col s12">
+                <blockquote class="grey lighten-5" style="height:100%"><h5 class="red-text text-darken-2">Click button if you are</h5></blockquote>
+            </div>
+
+            <br><br><br><br><br><br>
+            <div class="col s12">
+                <div class="col s6 center-align">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger btn amber darken-2' href='#' data-target='victim' style="width:80%">Victim</a>
+                    <!-- Dropdown Structure -->
+                    <ul id='victim' class='dropdown-content grey lighten-2'>
+                        <li><a href="#!" class="deep-orange-text" id="V_Rob">ROBBERY</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!" class="deep-orange-text" id="V_KNap">KIDNAP</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!" class="deep-orange-text" id="V_FH">FIRE HAZARD</a></li>
+                    </ul>
+                </div>
+                <div class="col s6 center-align">
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger btn amber darken-2' href='#' data-target='witness' style="width:80%">Witness</a>
+                    <!-- Dropdown Structure -->
+                    <ul id='witness' class='dropdown-content grey lighten-2'>
+                        <li><a href="#!" class="deep-orange-text" id="W_Rob">ROBBERY</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!" class="deep-orange-text" id="W_KNap">KIDNAP</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!" class="deep-orange-text" id="W_FH">FIRE HAZARD</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!" class="deep-orange-text" id="W_M">MURDER</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!" class="deep-orange-text" id="W_CH">CONSTRUCTION HAZARD</a></li>
+                        <li class="divider" tabindex="-1"></li>
+                        <li><a href="#!" class="deep-orange-text" id="W_SC">SUICIDE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+    <div class="row container">
+        <div class="col s12 m12">
+            @*<div class="l3"></div>*@
+            <div class="col s12 m6 l6 right-align" >
+                <button type="button" name="button" class="waves-effect waves-light btn-small red z-depth-3" style="width:100%; margin-bottom:10px" id="alarm-sound">
+                    <i class="material-icons left">notifications_none</i>
+                    Emergency Alarm
+                </button>
+            </div>
+            <div class="col s12 m6 l6 left-align" >
+                <button type="button" name="button" class="waves-effect waves-light btn-small blue z-depth-3 dropdown-trigger" style="width:100%" data-target='nums'>
+                    <i class="material-icons left">
+                        call
+                    </i>
+                    Emergency Numbers
+                </button>
+                <ul id='nums' class='dropdown-content grey lighten-2'>
+                    @foreach (var item in Model)
+                    {
+                        <li>
+                            <a href=#@item.ID class="waves-effect waves-light modal-trigger">@Html.DisplayFor(modelItem => item.Name)</a>
+                        </li>
+
+                    }
+                </ul>
+            </div>
+            @*<div class="l3"></div>*@
+        </div>
+        
+    </div>
+
+    @foreach (var item in Model)
+    {
+        <div id=@item.ID class="modal">
+            <div class="modal-content">
+
+                <h4>Emergency Numbers</h4>
+                <p>Police Number</p>
+                <p>@Html.DisplayFor(modelItem => item.PolNum)</p>
+                <p>Fire Department</p>
+                <p>@Html.DisplayFor(modelItem => item.FireNum)</p>
+                <p>Ambulance</p>
+                <p>@Html.DisplayFor(modelItem => item.HealthNum)</p>
+
+            </div>
+        </div>
+    }
+
+
+    <script>
+
+            //geolocation section
+            function getLocation() {
+                if (navigator.geolocation) {
+                    setTimeout(function () {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    }, 50);
+                } else {
+                    x.innerHTML = "Geolocation is not supported by this browser.";
+                }
+            }
+            var lat = "";
+            var lng = "";
+            function showPosition(position) {
+                lat = position.coords.latitude;
+                lng = position.coords.longitude;
+
+                console.log("Latitude: " + position.coords.latitude +
+                "Longitude: " + position.coords.longitude);
+            }
+
+            //share details of each problems section
+            function FB_V_Rob_share() {
+                function V_Rob_details() {
+                    FB.ui({
+                        method: 'share',
+                        //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                        href: 'https://developers.facebook.com/docs/',
+                        hashtag: '#Got_Robbed',
+                        quote: 'I have been robbed'
+                    }, function (response) { });
+                    console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+                }
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        if ($("#id").html() != null) {
+                            $(getLocation());
+                            setTimeout(function () { $(V_Rob_details()); }, 200);
+
+                            $("#login_text").css("display", "none");
+                            $("#login").css("display", "none");
+                            $("#login_divider").css("display", "none");
+                        }
+
+                    } else {
+                        alert("Please Log in first in the side bar");
+                        $("#login_text").css("display", "block");
+                        $("#login").css("display", "block");
+                        $("#login_divider").css("display", "block");
+                    }
+                });
+            }
+
+            function FB_V_KNap_share() {
+                function V_KNap_details() {
+                    FB.ui({
+                        method: 'share',
+                        //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                        href: 'https://developers.facebook.com/docs/',
+                        hashtag: '#Got_Kidnapped',
+                        quote: 'I have been kidnapped'
+                    }, function (response) { });
+                    console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+                }
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        if ($("#id").html() != null) {
+                            $(getLocation());
+                            setTimeout(function () { $(V_KNap_details()); }, 200);
+
+                            $("#login_text").css("display", "none");
+                            $("#login").css("display", "none");
+                            $("#login_divider").css("display", "none");
+                        }
+
+                    } else {
+                        alert("Please Log in first in the side bar");
+                        $("#login_text").css("display", "block");
+                        $("#login").css("display", "block");
+                        $("#login_divider").css("display", "block");
+                    }
+                });
+            }
+
+            function FB_V_FH_share() {
+                function V_FH_details() {
+                    FB.ui({
+                        method: 'share',
+                        //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                        href: 'https://developers.facebook.com/docs/',
+                        hashtag: '#Fire'
+                    }, function (response) { });
+                    console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+                }
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        if ($("#id").html() != null) {
+                            $(getLocation());
+                            setTimeout(function () { $(V_FH_details()); }, 200);
+
+                            $("#login_text").css("display", "none");
+                            $("#login").css("display", "none");
+                            $("#login_divider").css("display", "none");
+                        }
+
+                    } else {
+                        alert("Please Log in first in the side bar");
+                        $("#login_text").css("display", "block");
+                        $("#login").css("display", "block");
+                        $("#login_divider").css("display", "block");
+                    }
+                });
+            }
+
+            function FB_W_Rob_share() {
+                function W_Rob_details() {
+                    FB.ui({
+                        method: 'share',
+                        //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                        href: 'https://developers.facebook.com/docs/',
+                        hashtag: '#Got_Robbed',
+                        quote: 'I saw someone got robbed'
+                    }, function (response) { });
+                    console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+                }
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        if ($("#id").html() != null) {
+                            $(getLocation());
+                            setTimeout(function () { $(W_Rob_details()); }, 200);
+
+                            $("#login_text").css("display", "none");
+                            $("#login").css("display", "none");
+                            $("#login_divider").css("display", "none");
+                        }
+
+                    } else {
+                        alert("Please Log in first in the side bar");
+                        $("#login_text").css("display", "block");
+                        $("#login").css("display", "block");
+                        $("#login_divider").css("display", "block");
+                    }
+                });
+            }
+
+            function FB_W_KNap_share() {
+                function W_KNap_details() {
+                    FB.ui({
+                        method: 'share',
+                        //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                        href: 'https://developers.facebook.com/docs/',
+                        hashtag: '#Got_Kidnapped',
+                        quote: 'I saw someone got kidnapped'
+                    }, function (response) { });
+                    console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+                }
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        if ($("#id").html() != null) {
+                            $(getLocation());
+                            setTimeout(function () { $(W_KNap_details()); }, 200);
+
+                            $("#login_text").css("display", "none");
+                            $("#login").css("display", "none");
+                            $("#login_divider").css("display", "none");
+                        }
+
+                    } else {
+                        alert("Please Log in first in the side bar");
+                        $("#login_text").css("display", "block");
+                        $("#login").css("display", "block");
+                        $("#login_divider").css("display", "block");
+                    }
+                });
+            }
+
+            function FB_W_FH_share() {
+                function W_FH_details() {
+                    FB.ui({
+                        method: 'share',
+                        //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                        href: 'https://developers.facebook.com/docs/',
+                        hashtag: '#Fire',
+                        quote: 'I saw something on fire'
+                    }, function (response) { });
+                    console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+                }
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        if ($("#id").html() != null) {
+                            $(getLocation());
+                            setTimeout(function () { $(W_FH_details()); }, 200);
+
+                            $("#login_text").css("display", "none");
+                            $("#login").css("display", "none");
+                            $("#login_divider").css("display", "none");
+                        }
+
+                    } else {
+                        alert("Please Log in first in the side bar");
+                        $("#login_text").css("display", "block");
+                        $("#login").css("display", "block");
+                        $("#login_divider").css("display", "block");
+                    }
+                });
+            }
+
+            function FB_W_M_share() {
+                function W_M_details() {
+                    FB.ui({
+                        method: 'share',
+                        //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                        href: 'https://developers.facebook.com/docs/',
+                        hashtag: '#Murdered',
+                        quote: 'I saw someone got murdered'
+                    }, function (response) { });
+                    console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+                }
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        if ($("#id").html() != null) {
+                            $(getLocation());
+                            setTimeout(function () { $(W_M_details()); }, 200);
+
+                            $("#login_text").css("display", "none");
+                            $("#login").css("display", "none");
+                            $("#login_divider").css("display", "none");
+                        }
+
+                    } else {
+                        alert("Please Log in first in the side bar");
+                        $("#login_text").css("display", "block");
+                        $("#login").css("display", "block");
+                        $("#login_divider").css("display", "block");
+                    }
+                });
+            }
+
+            function FB_W_CH_share() {
+                function W_CH_details() {
+                    FB.ui({
+                        method: 'share',
+                        //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                        href: 'https://developers.facebook.com/docs/',
+                        hashtag: '#Construction_hazard',
+                        quote: 'I saw someone got injured in  constructon area'
+                    }, function (response) { });
+                    console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+                }
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        if ($("#id").html() != null) {
+                            $(getLocation());
+                            setTimeout(function () { $(W_CH_details()); }, 200);
+
+                            $("#login_text").css("display", "none");
+                            $("#login").css("display", "none");
+                            $("#login_divider").css("display", "none");
+                        }
+
+                    } else {
+                        alert("Please Log in first in the side bar");
+                        $("#login_text").css("display", "block");
+                        $("#login").css("display", "block");
+                        $("#login_divider").css("display", "block");
+                    }
+                });
+            }
+
+            function FB_W_SC_share() {
+                function W_SC_details() {
+                    FB.ui({
+                        method: 'share',
+                        //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                        href: 'https://developers.facebook.com/docs/',
+                        hashtag: '#Suicide',
+                        quote: 'I saw someone comitted suicid'
+                    }, function (response) { });
+                    console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+                }
+                FB.getLoginStatus(function (response) {
+                    if (response.status === 'connected') {
+                        if ($("#id").html() != null) {
+                            $(getLocation());
+                            setTimeout(function () { $(W_SC_details()); }, 200);
+
+                            $("#login_text").css("display", "none");
+                            $("#login").css("display", "none");
+                            $("#login_divider").css("display", "none");
+                        }
+
+                    } else {
+                        alert("Please Log in first in the side bar");
+                        $("#login_text").css("display", "block");
+                        $("#login").css("display", "block");
+                        $("#login_divider").css("display", "block");
+                    }
+                });
+            }
+
+            //JQuery and triggers
+            $(document).ready(function () {
+                //initializations
+                $('.sidenav').sidenav()
+                $('.dropdown-trigger').dropdown();
+                $('.modal').modal();
+
+                //buttons
+                $("#V_Rob").click(function () {
+                    $(FB_V_Rob_share())
+                });
+                $("#V_KNap").click(function () {
+                    $(FB_V_KNap_share())
+                });
+                $("#V_FH").click(function () {
+                    $(FB_V_FH_share())
+                });
+                $("#W_Rob").click(function () {
+                    $(FB_W_Rob_share())
+                });
+                $("#W_KNap").click(function () {
+                    $(FB_W_KNap_share())
+                });
+                $("#W_FH").click(function () {
+                    $(FB_W_FH_share())
+                });
+                $("#W_M").click(function () {
+                    $(FB_W_M_share())
+                });
+                $("#W_CH").click(function () {
+                    $(FB_W_CH_share())
+                });
+                $("#W_SC").click(function () {
+                    $(FB_W_SC_share())
+                });
+
+                //Alarm
+                var obj = document.createElement("audio");
+                obj.src = "../audio/Alarm.wav";
+                obj.volume = 0.5;
+                obj.autoPlay = false;
+                obj.preLoad = true;
+                obj.controls = true;
+                obj.loop = true;
+                var play = false;
+                $('#alarm-sound').click(function () {
+                    if (play === false) {
+                        obj.play();
+                        play = true;
+                    } else {
+                        obj.pause();
+                        play = false;
+                    }
+                });
+            });
+    </script>
+</body>
+</html>
+
+
+
