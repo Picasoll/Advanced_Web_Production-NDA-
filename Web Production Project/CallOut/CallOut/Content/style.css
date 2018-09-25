@@ -24,3 +24,54 @@ pre{
   font-size: 1.3rem;
   text-align: center;
 }
+
+#fragment2
+{
+  margin-top:-20px;
+}
+#fragment1
+{
+  width: 25em;
+		    white-space:nowrap;
+		    overflow:hidden;
+		    -webkit-animation: frag1type 20s steps(50, end) 0s infinite;
+		    animation: frag1type 20s steps(50, end) 0s infinite;
+}
+@keyframes frag1type{
+		    
+		    from { width: 0;}
+		    37%{width:25em;}
+		    49%{width:0;}
+		    100%{width:0;}
+		}
+
+		@-webkit-keyframes frag1type{
+		    from { width: 0;}
+		    37%{width:25em;}
+		    49%{width:0;}
+		    100%{width:0;}
+		}
+#fragment2
+{
+  opacity: 0;
+			width: 25em;
+		    white-space:nowrap;
+		    overflow:hidden;
+		    -webkit-animation: frag2type 20s steps(50, end) 10s infinite;
+
+		    animation: frag2type 20s steps(50, end) 10s infinite;
+}
+@keyframes frag2type{
+		    
+		    from { width: 0; opacity:1; }
+		    37%{width:25em;opacity:1; }
+		    49%{width:0;opacity:1; }
+		    100%{width:0;opacity:1; }
+		}
+
+		@-webkit-keyframes frag2type{
+		    from { width: 0; opacity:1; }
+		    37%{width:25em;opacity:1; }
+		    49%{width:0;opacity:1; }
+		    100%{width:0;opacity:1; }
+		}

@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to CallOut</title>
+    <link rel="icon" type="image/ico" href="../img/Icon-Web.png" />
     @Styles.Render("~/Content/css")
 
     <!--Import Google Icon Font-->
@@ -26,14 +27,7 @@
 
         // This is called with the results from from FB.getLoginStatus().
         function statusChangeCallback(response) {
-            //console.log('statusChangeCallback');
-            //console.log(response);
-            // The response object is returned with a status field that lets the
-            // app know the current login status of the person.
-            // Full docs on the response object can be found in the documentation
-            // for FB.getLoginStatus().
             if (response.status === 'connected') {
-                // Logged into your app and Facebook.
                 loginAPI();
                 if ($("#id").html() != null) {
                     console.log('hi');
@@ -43,18 +37,13 @@
                 }
                               
             } else {
-                // The person is not logged into your app or we are unable to tell.
-                //document.getElementById('status').innerHTML = 'Please log ' +
-                //  'into this app.';
+
                 $("#login_text").css("display", "block");
                 $("#login").css("display", "block");
                 $("#login_divider").css("display", "block");
             }
         }
 
-        // This function is called when someone finishes with the Login
-        // Button.  See the onlogin handler attached to it in the sample
-        // code below.
         function checkLoginState() {
             FB.getLoginStatus(function (response) {
                 statusChangeCallback(response);
@@ -70,26 +59,11 @@
                 version: 'v2.8' // use graph api version 2.8
             });
 
-            // Now that we've initialized the JavaScript SDK, we call
-            // FB.getLoginStatus().  This function gets the state of the
-            // person visiting this page and can return one of three states to
-            // the callback you provide.  They can be:
-            //
-            // 1. Logged into your app ('connected')
-            // 2. Logged into Facebook, but not your app ('not_authorized')
-            // 3. Not logged into Facebook and can't tell if they are logged into
-            //    your app or not.
-            //
-            // These three cases are handled in the callback function.
-
             FB.getLoginStatus(function (response) {
                 statusChangeCallback(response);
             });
 
         };
-
-        // Here we run a very simple test of the Graph API after login is
-        // successful.  See statusChangeCallback() for when this call is made.
         function loginAPI() {
             console.log('Welcome!  Fetching your information.... ');
             FB.api('/me', profile => {
@@ -103,9 +77,6 @@
                 $("#id").html("User ID : "+id);
                 $("#name").html("User Name : " + name);
 
-                //document.getElementById("ID").innerHTML = id;
-                //document.getElementById("Name").innerHTML = name;
-                //document.getElementById("Img").innerHTML = img;
             });
         }
 
@@ -121,7 +92,7 @@
                                 menu
                             </i>
                         </a>
-                        <a href="@Url.Action("Index", "CallOut")" class="brand-logo ">Logo</a>
+                        <a href="@Url.Action("Index", "CallOut")" class="brand-logo" style="width:200px; height:50px; margin-top:5px"><img src="~/img/Logo.png" style="width:200px; height:50px"></a>
                     </div>
                     <div class="col l7 right">
                         <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -165,17 +136,17 @@
 
             <li><div class="divider blue-grey lighten-3"></div></li>
 
-            <li><a href="@Url.Action("ShareProblems", "CallOut")" ><i class="material-icons amber-text text-lighten-1">report</i>
+            <li><a href="@Url.Action("ShareProblems", "CallOut")" ><i class="material-icons red-text text-lighten-1">report</i>
                     Share your Emergency 
                 </a>
             </li>
 
             <li>
-                <a class="waves-effect waves-light modal-trigger" href="#About_Us">
+                <a class="waves-effect waves-light modal-trigger" href="#TM">
                     <i class="material-icons green-text text-lighten-2">
                         announcement
                     </i>
-                    About Us
+                    Tech Mash-up
                 </a>
             </li>
 
@@ -188,10 +159,19 @@
         </ul>
     </div>
 
-    <div id="About_Us" class="modal">
+    <div id="TM" class="modal">
         <div class="modal-content">
-            <h4>About us</h4>
-            <p>A bunch of text</p>
+            <h4>Tech Mash-up</h4>
+            <p>
+                The app use retrieving data from server, geolocation and sound. 
+             </p>
+            <p> By combining these technologies, the app can
+                achieve more than just a regular alarming app. Using with the combination the app evolves into an app that became
+                much more convenient to users and much more functional for daily use.
+            </p>
+            <p>In future, you can add regional language support,
+                live location sharings, direct call to local authorities, location based selection for local authorities and language support.
+            </p>
         </div>
     </div>
     <div class="container body-content">
