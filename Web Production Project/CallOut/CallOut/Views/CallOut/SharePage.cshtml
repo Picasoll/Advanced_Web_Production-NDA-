@@ -6,24 +6,29 @@
 
 <!DOCTYPE html>
 
-<<html lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
     <title>Welcome To CallOut</title>
     <meta property="og:url" content="https://localhost:44303/Home/SharePage" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="CallOut" />
+    <meta property="fb:app_id" content="1550132248426126" />
     <meta property="og:description" content="Your Friend's last known location" />
+    @*<meta property="og:image" content="https://www.your-domain.com/path/image.jpg" />*@
 
 
-    <link rel="icon" type="image/ico" href="./Images/icon.png" />
+    <link rel="icon" type="image/ico" href="../img/Icon-Web.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="~/Content/materialize.min.css" media="screen,projection" />
-    <!-- <link type="text/css" rel="stylesheet" href="css/Style.css" media="screen,projection"/> -->
+     <link type="text/css" rel="stylesheet" href="~/Content/style.css" media="screen,projection"/> 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -51,30 +56,26 @@
         }
     </style>
 
-    <script>
-
-
-
-
-    </script>
-
 </head>
+
 <body bgcolor="#424242">
+    <script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.1&appId=1550132248426126&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="navbar-fixed">
         <nav class="blue">
             <div class="nav-wrapper">
                 <div class="row">
                     <div class="col s12 m12 l3">
-                        <a href="#" class="brand-logo ">Logo</a>
+                        <a href="#" class="brand-logo" style="width:200px; height:50px; margin-top:5px"><img src="~/img/Logo.png" style="width:200px; height:50px"></a>
                     </div>
                     <div class="col l7 right">
-                        <!-- <ul id="nav-mobile" class="right hide-on-med-and-down">
-                          <li>
-                            <button type="button" name="button" class="waves-effect waves-light btn blue" id="alarm-sound">
-                              Emergency Alarm
-                            </button>
-                          </li>
-                        </ul> -->
                         <div class="hide-on-med-and-down">
                             <h5>Creating a safe place for everyone</h5>
                         </div>
@@ -94,7 +95,11 @@
         <div class="row">
             <div class="container">
                 <div class="col s12">
-                    <blockquote class="grey lighten-5"><h5 class="red-text text-darken-2">This is the Shared Location</h5></blockquote>
+                    <blockquote class="grey lighten-5">
+                        <h5 class="red-text text-darken-2">
+                            <div id="H_Text"></div>
+                        </h5>
+                    </blockquote>
                 </div>
                 <div class="col s12">
                     <div class="col s4"></div>
@@ -108,8 +113,11 @@
     </div>
 
     <script>
+        
+
             var lat = 2;
             var lng = 1;
+            
             $(document).ready(function () {
 
                 var url = window.location.search.toString();
@@ -121,9 +129,6 @@
                 lat = parseFloat(latpart.slice(5));
                 lng = parseFloat(lngpart.slice(4));
 
-
-                console.log(lat);
-                console.log(lng);
 
                 $('.sidenav').sidenav()
                 $('.modal').modal();
@@ -150,8 +155,8 @@
             var map = new mapboxgl.Map({
                 container: 'map', // container id
                 style: 'mapbox://styles/mapbox/streets-v9',
-                center: [96.159532, 16.827762], // starting position
-                zoom: 15 // starting zoom
+                center: [-10.3844167, 33.2013993], // starting position
+                zoom: 0.8 // starting zoom
             });
             map.on("load", function () {
                 /* Image: An image is loaded and added to the map. */
@@ -176,6 +181,27 @@
                     });
                 });
             });
+            map.addControl(new mapboxgl.NavigationControl());
+
+
+            var app = document.getElementById('H_Text');
+
+            var typewriter = new Typewriter(app, {
+                loop: true
+            });
+
+            typewriter.typeString('This is the Shared Location')
+                .pauseFor(3000)
+                .deleteAll()
+                .typeString('Location is marked by blue marker')
+                .pauseFor(3000)
+                .deleteAll()
+                .typeString('Zoom in by mouse scroll')
+                .pauseFor(3000)
+                .deleteChars(12)
+                .typeString('buttons on map')
+                .pauseFor(3000)
+                .start();
     </script>
     <script type="text/javascript" src="~/Scripts/materialize.min.js"></script>
 </body>

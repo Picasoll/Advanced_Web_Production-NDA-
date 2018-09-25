@@ -162,6 +162,6 @@ D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Micro
 D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Google.xml
 D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.Twitter.xml
 D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.csprojResolveAssemblyReference.cache
 D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.dll
 D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.pdb
+D:\Advanced_Web_Production-NDA-\Web Production Project\CallOut\CallOut\obj\Debug\CallOut.csprojResolveAssemblyReference.cache
