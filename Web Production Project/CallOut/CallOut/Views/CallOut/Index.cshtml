@@ -166,12 +166,12 @@
           {
               FB.ui({
                   method: 'share',
-                  //href: 'https://localhost:44303/Home/SharePage?lat='+lat+'&lng='+lng,
+                  //href: 'https://localhost:44303/CallOut/SharePage?lat='+lat+'&lng='+lng,
                   href: 'https://developers.facebook.com/docs/?lat=' + lat + '&lng=' + lng,
                   hashtag: '#Sharing_Location',
                   quote: 'This is my last known location'
               }, function (response) { });
-              console.log('https://localhost:44303/Home/SharePage?lat=' + lat + '&lng=' + lng);
+              console.log('https://localhost:44303/CallOut/SharePage?lat=' + lat + '&lng=' + lng);
           }
 
           function FB_login() {
